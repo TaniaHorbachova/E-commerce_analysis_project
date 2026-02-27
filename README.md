@@ -42,7 +42,11 @@
 ```mermaid
 flowchart LR
     A[Raw Dataset] --> B[BigQuery<br>v_cleaned]
-    B --> C[BigQuery<br>v_customer_churn]
-    C --> D[Jupyter Notebook<br>EDA & Metrics]
-    C --> E[Tableau<br>Dashboard & Visualization]
+    A --> C[BigQuery<br>v_customer_churn]
+
+    B --> D[Jupyter Notebook<br>EDA & Metrics]
+    C --> D
+
+    B --> E[Tableau<br>Dashboard & Visualization]
+    C --> E
 ```
