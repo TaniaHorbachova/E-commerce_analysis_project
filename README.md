@@ -37,3 +37,12 @@
 Метрики після_покупки:
 - **Delivery_Time_Days**: Тривалість_доставки (1-30 днів)
 - **Customer_Rating**: Рейтинг_задоволеності_клієнта (1-5 зірок)
+
+
+```mermaid
+flowchart LR
+    A[Raw Dataset] --> B[BigQuery<br>v_cleaned]
+    B --> C[BigQuery<br>v_customer_churn]
+    C --> D[Jupyter Notebook<br>EDA & Metrics]
+    C --> E[Tableau<br>Dashboard & Visualization]
+```
