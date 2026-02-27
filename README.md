@@ -38,6 +38,8 @@
 - **Delivery_Time_Days**: Тривалість_доставки (1-30 днів)
 - **Customer_Rating**: Рейтинг_задоволеності_клієнта (1-5 зірок)
 
+## Архітектура обробки даних
+
 <img width="2752" height="1052" alt="Frame 5" src="https://github.com/user-attachments/assets/a44f90ac-b474-46ee-a13f-165380892a3d" />
 
 
