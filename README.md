@@ -39,14 +39,4 @@
 - **Customer_Rating**: Рейтинг_задоволеності_клієнта (1-5 зірок)
 
 
-```mermaid
-flowchart LR
-    A[Raw Dataset] --> B[BigQuery<br>v_cleaned]
-    A --> C[BigQuery<br>v_customer_churn]
-
-    B --> D[Jupyter Notebook<br>EDA & Metrics]
-    C --> D
-
-    B --> E[Tableau<br>Dashboard & Visualization]
-    C --> E
-```
+![Data Pipeline](D:\DATAS\Python\hometasks\Project\Frame 5.png)
