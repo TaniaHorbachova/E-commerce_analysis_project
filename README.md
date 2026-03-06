@@ -117,7 +117,7 @@
 
 <p align="center">
   <a href="https://public.tableau.com/app/profile/tania.horbachova/viz/CustomerBehaviorRevenueAnalysis/Dashboard#1">
-    <img width="1200" height="900" alt="Переглянути інтерактивний дашборд у Tableau Public" src="https://github.com/user-attachments/assets/e6e37b28-bb83-4609-84a9-82b2695c8fbd" />
+    <img width="100%" height="900" alt="Переглянути інтерактивний дашборд у Tableau Public" src="https://github.com/user-attachments/assets/963b2460-0933-4f27-9ff8-e8ca6e173e8b" />
   </a>
 </p>
 
