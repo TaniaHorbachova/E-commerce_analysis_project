@@ -1,6 +1,6 @@
-## 1. DATA PREPARATION
+# 1. DATA PREPARATION
 
-# 1.1. Перевірка базової цілісності
+## 1.1. Перевірка базової цілісності
 
 ```sql
 SELECT 
@@ -12,7 +12,7 @@ FROM dataset.ecommerce;
 <img width="719" height="99" alt="1" src="https://github.com/user-attachments/assets/f56b218d-78d0-4495-be49-490aef2e6bba" />
 
 
-**1.2. Додаткові поля**
+## 1.2. Додаткові поля
 
 Створюю таблицю для аналізу, додаю колонки для дослідження часових патернів 
 
@@ -26,9 +26,9 @@ SELECT
 FROM dataset.ecommerce;
 ```
 
-## 2. REVENUE ANALYTICS
+# 2. REVENUE ANALYTICS
 
-**2.1. Total Revenue & Average Order Value (AOV)**
+## 2.1. Total Revenue & Average Order Value (AOV)
 
 ```sql
 SELECT 
@@ -39,7 +39,7 @@ FROM dataset.v_cleaned;
 <img width="897" height="70" alt="3" src="https://github.com/user-attachments/assets/2e3b776b-92eb-4249-9918-e73f56ee293e" />
 
 
-**2.2. Revenue by Category**
+## 2.2. Revenue by Category
 
 ```sql
 SELECT
@@ -54,7 +54,7 @@ ORDER BY revenue DESC;
 <img width="796" height="308" alt="4" src="https://github.com/user-attachments/assets/1c681053-32f0-4930-b7c9-19eae3bfe7ec" />
 
 
-**2.3. Revenue by City**
+## 2.3. Revenue by City
 
 ```sql
 SELECT
@@ -69,7 +69,7 @@ ORDER BY revenue DESC;
 <img width="796" height="373" alt="5" src="https://github.com/user-attachments/assets/b4f577cb-ab1c-4b39-94d7-8d437931d97d" />
 
 
-**2.4. Revenue by Device**
+## 2.4. Revenue by Device
 
 ```sql
 SELECT
@@ -84,7 +84,7 @@ ORDER BY revenue DESC;
 <img width="812" height="144" alt="6" src="https://github.com/user-attachments/assets/d9a072a1-18e0-4ec4-9e19-d7b7a24ed935" />
 
 
-**2.5. Revenue by Gender**
+## 2.5. Revenue by Gender
 
 ```sql
 SELECT
@@ -99,7 +99,7 @@ ORDER BY revenue DESC;
 <img width="794" height="138" alt="7" src="https://github.com/user-attachments/assets/5f32d94d-1fd5-4c11-9fac-18ed7ccf336e" />
 
 
-**2.6. Monthly Revenue & ARPU**
+## 2.6. Monthly Revenue & ARPU
 
 ```sql
 SELECT
@@ -113,9 +113,9 @@ ORDER BY order_month;
 <img width="819" height="544" alt="8" src="https://github.com/user-attachments/assets/d18fb1c2-744f-45a1-aa2d-4208845d4d65" />
 
 
-## 3. CUSTOMER ANALYTICS
+# 3. CUSTOMER ANALYTICS
 
-**3.1. Customer-Level Aggregation**
+## 3.1. Customer-Level Aggregation
 Створюю таблицю для подальшого аналізу RFM та аналізу відтоку в Python-середовищі
 
 ```sql
@@ -156,7 +156,7 @@ FROM customer_base c
 CROSS JOIN reference_date r;
 ```
 
-**3.2. Перевірка Churn Rate**
+## 3.2. Перевірка Churn Rate
 
 ```sql
 SELECT 
@@ -168,9 +168,9 @@ GROUP BY churn;
 ```
 <img width="865" height="103" alt="9" src="https://github.com/user-attachments/assets/c900ff79-3dbd-4d11-b372-0cd55ef1585c" />
 
-## 4. BEHAVIORAL ANALYTICS
+# 4. BEHAVIORAL ANALYTICS
 
-**4.1. Session Duration vs Spend**
+## 4.1. Session Duration vs Spend
 
 Додаю кількість сесій у кожний сегмент, для розуміння значущості, бо якщо в сегменті "30 хвилин" всього 2 клієнта, то цей високий чек - просто випадковість.
 
@@ -186,7 +186,7 @@ ORDER BY session_bucket;
 ```
 <img width="706" height="173" alt="10" src="https://github.com/user-attachments/assets/5a81fd82-3488-42cc-9a66-807d70e5283a" />
 
-**4.2. Pages Viewed vs Spend**
+## 4.2. Pages Viewed vs Spend
 
 ```sql
 SELECT
@@ -200,7 +200,7 @@ ORDER BY pages_bucket;
 ```
 <img width="711" height="145" alt="11" src="https://github.com/user-attachments/assets/ecba6108-b7a3-430f-942b-a5c5d8a76388" />
 
-**4.3. Delivery Time vs Rating**
+## 4.3. Delivery Time vs Rating
 
 ```sql
 SELECT
@@ -217,7 +217,7 @@ ORDER BY Delivery_Time_Days;
 
 
 
-**4.4. Returning vs New Customers**
+## 4.4. Returning vs New Customers
 
 ```sql
 SELECT
