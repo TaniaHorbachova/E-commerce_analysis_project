@@ -14,7 +14,7 @@ FROM dataset.ecommerce;
 
 **1.2. Додаткові поля**
 
-Створюю view для аналізу, додаю колонки для дослідження часових патернів 
+Створюю таблицю для аналізу, додаю колонки для дослідження часових патернів 
 
 ```sql
 CREATE OR REPLACE VIEW dataset.v_cleaned AS
@@ -115,9 +115,46 @@ ORDER BY order_month;
 
 ## 3. CUSTOMER ANALYTICS
 
+**3.1. Customer-Level Aggregation**
+Створюю таблицю для подальшого аналізу RFM та аналізу відтоку в Python-середовищі
 
+```sql
+CREATE OR REPLACE TABLE dataset.v_customer_churn AS
 
+WITH customer_base AS (
+  SELECT
+    Customer_ID,
+    MIN(Date) AS first_purchase,
+    MAX(Date) AS last_purchase,
+    COUNT(Order_ID) AS frequency,
+    SUM(Total_Amount) AS monetary
+  FROM dataset.v_cleaned
+  GROUP BY Customer_ID
+),
 
+reference_date AS (
+  SELECT
+    MAX(Date) AS max_date
+  FROM dataset.v_cleaned
+)
+
+SELECT
+  c.Customer_ID,
+  c.first_purchase,
+  c.last_purchase,
+  c.frequency,
+  c.monetary,
+  DATE_DIFF(c.last_purchase, c.first_purchase, DAY) AS lifetime_days,
+  DATE_DIFF(r.max_date, c.last_purchase, DAY) AS recency,
+
+  CASE 
+    WHEN DATE_DIFF(r.max_date, c.last_purchase, DAY) > 90 THEN 1
+    ELSE 0
+  END AS churn
+
+FROM customer_base c
+CROSS JOIN reference_date r;
+```
 
 
 
