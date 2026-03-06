@@ -114,13 +114,21 @@
 - Tableau для інтерактивної аналітики
 
 ## Tableau Dashboard 
-<img width="1200" height="900" alt="дашборд" src="https://github.com/user-attachments/assets/8e183f47-f86a-46c2-86f9-09bcedd500d5" />
 
-[![Переглянути дашборд у Tableau Public]](https://public.tableau.com/app/profile/tania.horbachova/viz/CustomerBehaviorRevenueAnalysis/Dashboard#1)
+<p align="center">
+  <a href="https://public.tableau.com/app/profile/tania.horbachova/viz/CustomerBehaviorRevenueAnalysis/Dashboard#1">
+    <img width="1200" height="900" alt="Переглянути інтерактивний дашборд у Tableau Public" src="https://github.com/user-attachments/assets/8e183f47-f86a-46c2-86f9-09bcedd500d5" />
+  </a>
+</p>
+
+<p align="center">
+  <em>Натисніть на зображення вище, щоб відкрити інтерактивну версію на Tableau Public</em>
+</p>
 
 ## Автор
 
 Таня Горбачова 
+
 Email: t.horbachova.data@gmail.com 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tania-horbachova-8b5117115/
