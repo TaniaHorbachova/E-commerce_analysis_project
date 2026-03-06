@@ -116,7 +116,7 @@ ORDER BY order_month;
 # 3. CUSTOMER ANALYTICS
 
 ## 3.1. Customer-Level Aggregation
-Створюю таблицю для подальшого аналізу RFM та аналізу відтоку в Python-середовищі
+Створюю таблицю для подальшого аналізу RFM та аналізу відтоку в Python-середовищі. Клієнт вважається таким, що покинув сервіс, якщо він не здійснював покупок більше **90 днів** відносно останньої дати в наборі даних.
 
 ```sql
 CREATE OR REPLACE TABLE dataset.v_customer_churn AS
