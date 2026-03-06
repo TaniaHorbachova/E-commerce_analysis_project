@@ -48,6 +48,6 @@
 - Продуктові рекомендації (Collaborative Filtering)
 - Прогнозування відтоку (ML Modeling - Logistic Regression)
 - Інтерактивний дашборд (Tableau)
-
-<img width="2752" height="1052" alt="Frame 6" src="https://github.com/user-attachments/assets/a44f90ac-b474-46ee-a13f-165380892a3d" />
+  
+<img width="2752" height="795" alt="Frame 6" src="https://github.com/user-attachments/assets/67bc8e6b-0335-45ea-a008-ad702d53b446" />
 
