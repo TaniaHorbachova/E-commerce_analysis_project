@@ -117,13 +117,14 @@
 
 <p align="center">
   <a href="https://public.tableau.com/app/profile/tania.horbachova/viz/CustomerBehaviorRevenueAnalysis/Dashboard#1">
-    <img width="1200" height="900" alt="Переглянути інтерактивний дашборд у Tableau Public" src="https://github.com/user-attachments/assets/8e183f47-f86a-46c2-86f9-09bcedd500d5" />
+    <img width="1200" height="900" alt="Переглянути інтерактивний дашборд у Tableau Public" src="https://github.com/user-attachments/assets/e6e37b28-bb83-4609-84a9-82b2695c8fbd" />
   </a>
 </p>
 
 <p align="center">
   <em>Натисніть на зображення вище, щоб відкрити інтерактивну версію на Tableau Public</em>
 </p>
+
 
 Дашборд відповідає на ключові бізнес-питання і демонструє логічну бізнес-історію:
 
