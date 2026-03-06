@@ -132,11 +132,11 @@
 
 - **Revenue by Category** - Які продукти заробляють гроші?
 
-- **Customer Distribution by Lifetime Segment** - Яка структура клієнтів?
+- **Churn Rate by Lifetime Segment** - Де проблема з відтоком клієнтів?
 
 - **Revenue Concentration by Lifetime Segment** - Хто приносить гроші?
 
-- **Churn Rate by Lifetime Segment** - Де проблема з відтоком клієнтів?
+- **Customer Distribution by Lifetime Segment** - Яка структура клієнтів?
 
 
 
