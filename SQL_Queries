@@ -1,0 +1,16 @@
+## 1. DATA PREPARATION LAYER
+1.1 Перевірка базової цілісності
+
+SELECT 
+  COUNT(*) AS total_rows,
+  COUNT(DISTINCT Order_ID) AS unique_orders,
+  COUNT(DISTINCT Customer_ID) AS unique_customers
+FROM dataset.ecommerce;
+
+
+
+
+
+
+
+
