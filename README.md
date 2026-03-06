@@ -46,33 +46,40 @@
 - перевірка якості даних
 - об’єднання таблиць за Customer_ID
 - створення запитів та агрегованих таблиць
+
 **2.  Дослідницький аналіз даних (EDA, Python)**
 - аналіз транзакцій
 - аналіз демографії
 - поведінкові патерни
+
 **3.  Сегментація за терміном життя клієнта (Customer Lifetime)**
 - побудова розподілу Customer Lifetime
 - виділення сегментів: Short‑term, Mid‑term, Long‑term
 - аналіз поведінки, цінності та відтоку сегментів
+
 **4.  Перевірка статистичних гіпотез (A/B Testing)**
 - порівняння поведінки сегментів
 - тестування впливу сегментації на частоту покупок
 - інтерпретація результатів
+
 **5.  Рекомендації (Retention Strategy)**
 - визначення критичних фаз відтоку
 - побудова тригерної стратегії 1-30 / 31-60 / 61-90 днів
 - бізнес‑логіка персоналізованих комунікацій
+
 **6.  Продуктові рекомендації (Item‑based Collaborative Filtering)**
 - матриця «клієнт × категорія»
 - обчислення схожості між категоріями
 - функція рекомендацій
 - інтеграція з retention‑стратегією
+
 **7.  Прогнозування відтоку (ML Modeling — Logistic Regression)**
 - кореляційний аналіз
 - формування цільової змінної
 - навчання моделі
 - оцінка якості (ROC‑AUC, accuracy)
 - інтерпретація коефіцієнтів
+
 **8.  Інтерактивний дашборд (Tableau)**
 - динаміка доходу
 - сегментація клієнтів
@@ -81,13 +88,13 @@
 - інтеграція даних з різних таблиць через Customer_ID
 
 ## Технологічний стек
-1. Мова програмування - Python
-2. Аналіз даних - Pandas, NumPy
-3. Візуалізація - Plotly
-4. Машинне навчання - Scikit‑learn
-5. Бази даних - Google BigQuery
-6. BI‑інструменти - Tableau
-7. Середовище - Jupyter Notebook
+- Мова програмування - Python
+- Аналіз даних - Pandas, NumPy
+- Візуалізація - Plotly
+- Машинне навчання - Scikit‑learn
+- Бази даних - Google BigQuery
+- BI‑інструменти - Tableau
+- Середовище - Jupyter Notebook
 
 ## Ключові результати
 - Виявлено 3 сегменти клієнтів за lifetime.
@@ -107,11 +114,15 @@
 - Tableau для інтерактивної аналітики
 
 ## Tableau Dashboard 
+[![Переглянути дашборд у Tableau Public](images/dashboard_preview.png)](https://public.tableau.com/app/profile/tania.horbachova/viz/CustomerBehaviorRevenueAnalysis/Dashboard#1)
 
 ## Автор
 Таня Горбачова
+
 📧 Email: t.horbachova.data@gmail.com
-🔗 LinkedIn: [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tania-horbachova-8b5117115/)
+
+🔗  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tania-horbachova-8b5117115/)
+
 📍 Україна
 
 
