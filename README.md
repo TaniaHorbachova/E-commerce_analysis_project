@@ -131,7 +131,7 @@
 
 Email: t.horbachova.data@gmail.com 
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tania-horbachova-8b5117115/
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tania-horbachova-8b5117115/)
 
 
 
