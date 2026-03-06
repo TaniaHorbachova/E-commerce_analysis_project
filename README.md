@@ -125,6 +125,20 @@
   <em>Натисніть на зображення вище, щоб відкрити інтерактивну версію на Tableau Public</em>
 </p>
 
+Дашборд відповідає на ключові бізнес-питання і демонструє логічну бізнес-історію:
+
+- **Revenue Dynamics by Month** - Як змінюється бізнес у часі?
+
+- **Revenue by Category** - Які продукти заробляють гроші?
+
+- **Customer Distribution by Lifetime Segment** - Яка структура клієнтів?
+
+- **Revenue Concentration by Lifetime Segment** - Хто приносить гроші?
+
+- **Churn Rate by Lifetime Segment** - Де проблема з відтоком клієнтів?
+
+
+
 ## Автор
 
 Таня Горбачова 
