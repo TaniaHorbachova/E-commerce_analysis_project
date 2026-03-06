@@ -156,13 +156,78 @@ FROM customer_base c
 CROSS JOIN reference_date r;
 ```
 
+**3.2. Перевірка Churn Rate**
+
+```sql
+SELECT 
+  churn,
+  COUNT(*) AS customers,
+  ROUND(COUNT(*) / SUM(COUNT(*)) OVER (), 2) AS rate
+FROM dataset.v_customer_churn
+GROUP BY churn;
+```
+<img width="865" height="103" alt="9" src="https://github.com/user-attachments/assets/c900ff79-3dbd-4d11-b372-0cd55ef1585c" />
+
+## 4. BEHAVIORAL ANALYTICS
+
+**4.1. Session Duration vs Spend**
+
+Додаю кількість сесій у кожний сегмент, для розуміння значущості, бо якщо в сегменті "30 хвилин" всього 2 клієнта, то цей високий чек - просто випадковість.
+
+```sql
+SELECT
+  ROUND(Session_Duration_Minutes, -1) AS session_bucket,
+  ROUND(AVG(Total_Amount), 2) AS avg_spend,
+  COUNT(*) AS session_count, 
+  ROUND(STDDEV(Total_Amount), 2) AS price_variability --  розкид цін
+FROM dataset.v_cleaned
+GROUP BY session_bucket
+ORDER BY session_bucket;
+```
+<img width="706" height="173" alt="10" src="https://github.com/user-attachments/assets/5a81fd82-3488-42cc-9a66-807d70e5283a" />
+
+**4.2. Pages Viewed vs Spend**
+
+```sql
+SELECT
+  ROUND(Pages_Viewed, -1) AS pages_bucket,
+  ROUND(AVG(Total_Amount), 2) AS avg_spend,
+  COUNT(*) AS session_count, -- кількість сторінок для перевірки значущості
+  ROUND(STDDEV(Total_Amount), 2) AS price_variability 
+FROM dataset.v_cleaned
+GROUP BY pages_bucket
+ORDER BY pages_bucket;
+```
+<img width="711" height="145" alt="11" src="https://github.com/user-attachments/assets/ecba6108-b7a3-430f-942b-a5c5d8a76388" />
+
+**4.3. Delivery Time vs Rating**
+
+```sql
+SELECT
+  Delivery_Time_Days,
+  ROUND(AVG(Customer_Rating), 2) AS avg_rating,
+  COUNT(*) AS orders
+FROM dataset.v_cleaned
+GROUP BY Delivery_Time_Days
+ORDER BY Delivery_Time_Days;
+```
+<img width="545" height="373" alt="12 1" src="https://github.com/user-attachments/assets/f620d67a-2cc0-4986-b79c-c80460044ded" />
+<img width="545" height="378" alt="12 2" src="https://github.com/user-attachments/assets/1366e2fa-5dcb-4293-922b-ef8fc8771969" />
+<img width="549" height="142" alt="12 3" src="https://github.com/user-attachments/assets/5bbe939f-6537-4c00-b516-f9cd1b0580af" />
 
 
 
+**4.4. Returning vs New Customers**
 
-
-
-
+```sql
+SELECT
+  Is_Returning_Customer,
+  COUNT(*) AS orders,
+  ROUND(AVG(Total_Amount), 2) AS avg_spend
+FROM dataset.v_cleaned
+GROUP BY Is_Returning_Customer;
+```
+<img width="515" height="108" alt="13" src="https://github.com/user-attachments/assets/61763111-f8b5-4400-8290-f0cf94c92d7a" />
 
 
 
