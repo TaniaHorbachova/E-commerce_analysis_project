@@ -116,13 +116,15 @@
 ## Tableau Dashboard 
 <img width="1200" height="900" alt="дашборд" src="https://github.com/user-attachments/assets/8e183f47-f86a-46c2-86f9-09bcedd500d5" />
 
-[![Переглянути дашборд у Tableau Public](https://public.tableau.com/app/profile/tania.horbachova/viz/CustomerBehaviorRevenueAnalysis/Dashboard#1)
+[![Переглянути дашборд у Tableau Public]](https://public.tableau.com/app/profile/tania.horbachova/viz/CustomerBehaviorRevenueAnalysis/Dashboard#1)
 
 ## Автор
 
-Таня Горбачова [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tania-horbachova-8b5117115/
+Таня Горбачова 
 Email: t.horbachova.data@gmail.com 
-📍 Україна
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/tania-horbachova-8b5117115/
+
 
 
 
