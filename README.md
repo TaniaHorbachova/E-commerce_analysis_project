@@ -38,10 +38,7 @@
 - **Delivery_Time_Days**: Тривалість_доставки (1-30 днів)
 - **Customer_Rating**: Рейтинг задоволеності клієнта (1-5 зірок)
 
-## Структура проєкту
-
-<img width="2752" height="1052" alt="Frame 5" src="https://github.com/user-attachments/assets/a44f90ac-b474-46ee-a13f-165380892a3d" />
-
+## Етапи виконання проєкту
 
 - Очищення та підготовка даних (Google BigQuery)
 - Дослідницький аналіз даних EDA (Python)
@@ -51,3 +48,6 @@
 - Продуктові рекомендації (Collaborative Filtering)
 - Прогнозування відтоку (ML Modeling - Logistic Regression)
 - Інтерактивний дашборд (Tableau)
+
+<img width="2752" height="1052" alt="Frame 5" src="https://github.com/user-attachments/assets/a44f90ac-b474-46ee-a13f-165380892a3d" />
+
