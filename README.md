@@ -49,5 +49,5 @@
 - Прогнозування відтоку (ML Modeling - Logistic Regression)
 - Інтерактивний дашборд (Tableau)
 
-<img width="2752" height="1052" alt="Frame 5" src="https://github.com/user-attachments/assets/a44f90ac-b474-46ee-a13f-165380892a3d" />
+<img width="2752" height="1052" alt="Frame 6" src="https://github.com/user-attachments/assets/a44f90ac-b474-46ee-a13f-165380892a3d" />
 
