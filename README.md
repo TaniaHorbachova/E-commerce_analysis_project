@@ -117,7 +117,7 @@
 
 <p align="center">
   <a href="https://public.tableau.com/app/profile/tania.horbachova/viz/CustomerBehaviorRevenueAnalysis/Dashboard#1">
-    <img width="100%" height="900" alt="Переглянути інтерактивний дашборд у Tableau Public" src="https://github.com/user-attachments/assets/963b2460-0933-4f27-9ff8-e8ca6e173e8b" />
+    <img width="100%" height="900" alt="Переглянути інтерактивний дашборд у Tableau Public" src="https://github.com/user-attachments/assets/9d57d810-388b-4b26-8d00-63686c2cd014" />
   </a>
 </p>
 
@@ -132,12 +132,11 @@
 
 - **Revenue by Category** - Які продукти заробляють гроші?
 
-- **Churn Rate by Lifetime Segment** - Де проблема з відтоком клієнтів?
-
 - **Revenue Concentration by Lifetime Segment** - Хто приносить гроші?
 
 - **Customer Distribution by Lifetime Segment** - Яка структура клієнтів?
 
+- **Churn Rate by Lifetime Segment** - Де проблема з відтоком клієнтів?
 
 
 ## Автор
